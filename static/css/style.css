@@ -74,7 +74,8 @@ select {
 }
 
 #table-area th {
-  text-align: center;
+  text-align: left;
+  border: 1px solid gray;
 }
 
 #table-area th:first-child,
@@ -138,14 +139,31 @@ select {
   color: #8e979f;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+table, thead, th, td {
+  border: 1px solid gray;
+  padding: 2px;
+}
+
+th {
+  background-color: gray;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
 /* media queries which will only be activated at specific screen sizes */
 @media (max-width: 800px) {
   #table-area td {
-    font-size: 1em;
+    font-size: 2em;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #table-area thead {
     display: none;
   }
@@ -223,3 +241,4 @@ select {
     opacity: 1;
   }
 }
+
