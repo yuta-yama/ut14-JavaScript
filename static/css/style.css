@@ -152,10 +152,6 @@ th {
   background-color: gray;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #ccc;
-}
-
 /* media queries which will only be activated at specific screen sizes */
 @media (max-width: 800px) {
   #table-area td {
@@ -171,7 +167,7 @@ tbody tr:nth-child(odd) {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: 1b3146;
   }
 
   #table-area tr td:last-child {
